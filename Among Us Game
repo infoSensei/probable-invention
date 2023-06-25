@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Objects;
+import java.util.Scanner;
+
+public class AmongUS {
+    public static void main(String[] args) {
+        System.out.println("Welcome to task manager");
+        System.out.println("Type the word !SUS! to proceed");
+        Scanner sc = new Scanner(System.in);
+        String word = sc.nextLine();
+        String correctword = "!SUS!";
+
+        if(Objects.equals(word, correctword)){
+            System.out.println("You have completed task successfully!");
+        }
+        else{
+            System.out.println("Try Again! Task Failed!");
+        }
+
+        }
+    }
